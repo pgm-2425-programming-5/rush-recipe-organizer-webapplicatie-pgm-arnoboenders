@@ -14,8 +14,10 @@ export default function RecipeItem({
       <p className="text-gray-600 text-sm sm:text-base md:text-lg">
         {recipe.category}
       </p>
-      <div className="flex justify-end mt-4">
+      <div className="flex justify-end mt-4 space-x-2">
         <Button href={`/recipes/${recipe.id}`}>View Recipe</Button>
+        <Button href={`/recipes/${recipe.id}/edit`} color="green">Edit Recipe</Button>
+        <Button href={`/recipes/${recipe.id}/delete`} color="red">Delete Recipe</Button>
       </div>
     </div>
   );
